@@ -1,0 +1,50 @@
+#Asking the User Name And Confirming
+def askingUserName():
+  userName = raw_input()
+  print ""
+  print "Are you sure " + userName + " is the name you wish to be called (y for yes, n for no)"
+  confirmingUserName ()
+
+def confirmingUserName():
+  print ""
+  userNameConfirm = raw_input()
+  if userNameConfirm == "y":
+    print ""
+    question1Screen()
+  elif userNameConfirm == "n":
+    print ""
+    print "Please input your name again please"
+    print ""
+    askingUserName()
+  else:
+    print "Please try confirming again (y for yes, n for no)"
+    confirmingUserName
+
+
+
+def question1Screen():
+  print "Question 1"
+
+
+
+#First Screen / Branding Screen
+print "Welcome to The       | |  | | | |__   __|_   _|  \/  |   /\|__   __|  ____|"
+print "                     | |  | | |    | |    | | | \  / |  /  \  | |  | |__   "
+print "                     | |  | | |    | |    | | | |\/| | / /\ \ | |  |  __|            Quiz " 
+print "                     | |__| | |____| |   _| |_| |  | |/ ____ \| |  | |____ "
+print "                      \____/|______|_|  |_____|_|  |_/_/    \_\_|  |______|"
+
+print ""
+print ""
+print ""
+print ""
+print "Made by Qayz, Itaty, and Alyana"
+print ""
+print "Have Fun!"
+print ""
+print ""
+print "Before we start, what is the name you would like to be called?"
+print ""
+
+#running askingUserName
+askingUserName ()
