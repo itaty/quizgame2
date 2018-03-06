@@ -1,0 +1,315 @@
+import sys
+
+guesses = 0 
+
+
+def checkForGuesses ():
+  if guesses == 0:
+    #sys.exit("game over, ur bad")
+  else:
+    print ""
+  
+#Asking the User Name And Confirming
+def askingUserName():
+  userName = raw_input()
+  print ""
+  print "Are you sure " + userName + " is the name you wish to be called (y for yes, n for no)"
+  confirmingUserName ()
+
+def confirmingUserName():
+  print ""
+  userNameConfirm = raw_input()
+  if userNameConfirm == "y":
+    print ""
+    question1Screen()
+  elif userNameConfirm == "n":
+    print ""
+    print "Please input your name again please"
+    print ""
+    askingUserName()
+  else:
+    print "Please try confirming again (y for yes, n for no)"
+    confirmingUserName
+
+
+
+def question1Screen():
+  global guesses
+  print "Question 1"
+  print "How many letters are in the English Alphabet?"
+  print ""
+  print "a)14  b)27  c)26  d)none of the above"
+  print ""
+  answer = raw_input ()
+  checkForGuesses ()
+  while answer != "c" :
+    print ""
+    print "Wrong"
+    print ""
+    print "Try again"
+    print ""
+    guesses += 1
+    print guesses
+    print ""
+    question1Screen ()
+  else: 
+    print ""
+    print "correct"
+    print ""
+   
+    question2Screen ()
+  
+def question2Screen():
+  global guesses
+  print "Question 2"
+  print "What is the only manmade object that can be seen from space?"
+  print ""
+  print "a)The Great Wall of China  b)Mount Rushmore  c)The Eifle Tower  d)none of the above"
+  print ""
+  answer = raw_input ()
+  if answer != "a" :
+    print ""
+    print "Wrong"
+    print ""
+    print "Try again"
+    print ""
+    guesses -= 1
+    print guesses
+    print ""
+    question2Screen ()
+  else: 
+    print ""
+    print "Correct"
+    print ""
+    
+    question3Screen ()
+
+def question3Screen():
+  global guesses
+  print "Question 3"
+  print "What is the largest fish in the ocean?"
+  print ""
+  print "a)a clown fish  b)a whale shark  c)a blue whale  d)your mom"
+  print ""
+  answer = raw_input ()
+  if answer != "b" :
+    print ""
+    print "Wrong"
+    print ""
+    print "Try again"
+    print ""
+    guesses -= 1
+    print guesses
+    print ""
+    question3Screen ()
+  else: 
+    print ""
+    print "Correct"
+    print ""
+    
+    question4Screen()
+
+def question4Screen():
+  global guesses
+  print "Question 4"
+  print "In which country would one find 8 of the worlds highest mountians?"
+  print ""
+  print "a)America  b)Spain   c)Nepal  d)China"
+  print ""
+  answer = raw_input ()
+  if answer != "c" :
+    print ""
+    print "Wrong"
+    print ""
+    print "Try again"
+    print ""
+    guesses -= 1
+    print guesses
+    print ""
+    question4Screen ()
+  else: 
+    print ""
+    print "Correct"
+    print ""
+    
+    question5Screen()
+
+def question5Screen():
+  global guesses
+  print "Question 5"
+  print "What was the first planet to be discovered using the telescope in 1781?"
+  print ""
+  print "a)Uranus  b)Venus  c)Mars  d)Pluto"
+  print ""
+  answer = raw_input ()
+  if answer != "a" :
+    print ""
+    print "Wrong"
+    print ""
+    print "Try again"
+    print ""
+    guesses -= 1
+    print guesses
+    print ""
+    question5Screen ()
+  else: 
+    print ""
+    print "Correct"
+    print ""
+    
+    question6Screen()
+
+def question6Screen():
+  global guesses
+  print "Question 6"
+  print "Which country has the worlds oldest flag?"
+  print ""
+  print "a)Germany  b)China  c)Egypt  d)Denmark"
+  print ""
+  answer = raw_input ()
+  if answer != "d" :
+    print ""
+    print "Wrong"
+    print ""
+    print "Try again"
+    print ""
+    guesses -= 1
+    print guesses
+    print ""
+    question6Screen ()
+  else: 
+    print ""
+    print "Correct"
+    print ""
+    
+    question7Screen()
+
+def question7Screen():
+  global guesses
+  print "Question 7"
+  print "Which is the largest planet in the solar system?"
+  print ""
+  print "a)Pluto  b)Jupiter  c)Neptune  d)Saturn"
+  print ""
+  answer = raw_input ()
+  if answer != "b" :
+    print ""
+    print "Wrong"
+    print ""
+    print "Try again"
+    print ""
+    guesses -= 1
+    print guesses
+    print ""
+    question7Screen ()
+  else: 
+    print ""
+    print "Correct"
+    print ""
+    
+    question8Screen()
+
+def question8Screen():
+  global guesses
+  print "Question 8"
+  print "The beaver is the national emblem of which country?"
+  print ""
+  print "a)Canada  b)China  c)Mexico  d)France"
+  print ""
+  answer = raw_input ()
+  if answer != "a" :
+    print ""
+    print "Wrong"
+    print ""
+    print "Try again"
+    print ""
+    guesses -= 1
+    print guesses
+    print ""
+    question8Screen ()
+  else: 
+    print ""
+    print "Correct"
+    print ""
+    
+    question9Screen()
+
+def question9Screen():
+  global guesses
+  print "Question 9"
+  print "What TV charcter said 'Live Long and Prosper'?"
+  print ""
+  print "a)Darth Vader, Star Wars b)Walter White, Breaking Bad  c)Dora Marquez, Dora the Explorer d)Spock, Star Trek"
+  print ""
+  answer = raw_input ()
+  if answer != "d" :
+    print ""
+    print "Wrong"
+    print ""
+    print "Try again"
+    print ""
+    guesses -= 1
+    print guesses
+    print ""
+    question9Screen ()
+  else: 
+    print ""
+    print "Correct"
+    print ""
+    
+    question10Screen()
+
+def question10Screen():
+  global guesses
+  print "Question 10"
+  print "What color are Spongebob Squarepants eyes'?"
+  print ""
+  print "a)Brown b)Green c)Blue  d)Yellow"
+  print ""
+  answer = raw_input ()
+  if answer != "c" :
+    print ""
+    print "Wrong"
+    print ""
+    print "Try again"
+    print ""
+    guesses -= 1
+    print guesses
+    print ""
+    question10Screen ()
+  else: 
+    print ""
+    print "Correct"
+    print ""
+    
+    ending()
+
+def ending():
+  print "Congrats you finished the Quiz!"
+  print ""
+  print "Wanna play again?"
+  question1Screen()
+
+
+#First Screen / Branding Screen
+print "Welcome to The       | |  | | | |__   __|_   _|  \/  |   /\|__   __|  ____|"
+print "                     | |  | | |    | |    | | | \  / |  /  \  | |  | |__   "
+print "                     | |  | | |    | |    | | | |\/| | / /\ \ | |  |  __|            Quiz " 
+print "                     | |__| | |____| |   _| |_| |  | |/ ____ \| |  | |____ "
+print "                      \____/|______|_|  |_____|_|  |_/_/    \_\_|  |______|"
+
+print ""
+print ""
+print ""
+print ""
+print "Made by Qayz, Itaty, and Alyana"
+print ""
+print "Have Fun!"
+print ""
+print ""
+print "Before we start, what is the name you would like to be called?"
+print ""
+
+
+#running askingUserName
+askingUserName ()
